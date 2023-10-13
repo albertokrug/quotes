@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import Post from "./Post";
 
-const baseURL = "http://localhost:8083/rest/posts/latest";
+const baseURL = "https://quotes-api-pdk2.onrender.com/rest/posts/latest";
 
 export default function PostLatest() {
   const [post, setPost] = React.useState(null);

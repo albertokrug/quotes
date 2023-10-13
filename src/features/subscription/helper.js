@@ -34,7 +34,7 @@ async function subscribe(serviceWorkerReg) {
       ),
     });
     const res = await axios.post(
-      "http://localhost:8083/rest/subscribe",
+      "https://quotes-api-pdk2.onrender.com/rest/subscribe",
       subscription
     );
     return res;
