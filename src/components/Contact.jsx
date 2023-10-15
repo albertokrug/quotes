@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, Col, Form } from "react-bootstrap";
+import { FormattedMessage } from "react-intl";
 
 const Contact = () => {
   const [formData, setFormData] = useState({ email: "", message: "" });
@@ -18,7 +19,9 @@ const Contact = () => {
     <Col md={{ span: 8, offset: 2 }}>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>
+            <FormattedMessage id="contact_1" />
+          </Form.Label>
           <Form.Control
             onChange={handleChange}
             value={formData.email}
@@ -29,7 +32,9 @@ const Contact = () => {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Message</Form.Label>
+          <Form.Label>
+            <FormattedMessage id="contact_2" />
+          </Form.Label>
           <Form.Control
             onChange={handleChange}
             value={formData.message}
@@ -40,7 +45,7 @@ const Contact = () => {
           />
         </Form.Group>
         <Button type="submit" variant="dark">
-          Send
+          <FormattedMessage id="contact_3" />
         </Button>
       </Form>
     </Col>

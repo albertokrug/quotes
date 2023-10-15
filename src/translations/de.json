@@ -1,0 +1,25 @@
+{
+  "home_1": "Lesen Sie das neuste Zitat.",
+
+  "about_1": "Über mich",
+  "about_2": "Das ist das erste Ergebnis mit dem MERN - Stack.",
+  "about_3": "Produkte",
+  "about_4": "MongoDB",
+  "about_5": "TS.ED",
+  "about_6": "React",
+  "about_7": "NodeJs",
+
+  "contact_1": "E-Mail-Adresse",
+  "contact_2": "Nachricht",
+  "contact_3": "Senden",
+
+  "quotes_1": "Mehr Zitate",
+
+  "footer_1": "Abonnieren",
+
+  "navigation_1": "Alberts tägliches Zitat",
+  "navigation_2": "Home",
+  "navigation_3": "Zitate",
+  "navigation_4": "Kontant",
+  "navigation_5": "Über"
+}

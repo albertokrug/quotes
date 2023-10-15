@@ -2,8 +2,10 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import Container from "react-bootstrap/Container";
+import LanguageSelector from "../features/language/LanguageSelector";
+import { FormattedMessage } from "react-intl";
 
-const Navigation = () => {
+const Navigation = (props) => {
   return (
     <>
       <Navbar
@@ -15,29 +17,40 @@ const Navigation = () => {
       >
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>Alberts Daily Quote</Navbar.Brand>
+            <Navbar.Brand>
+              <FormattedMessage id="navigation_1" />
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <LinkContainer to="/">
-                <Nav.Link>Home</Nav.Link>
+                <Nav.Link>
+                  <FormattedMessage id="navigation_2" />
+                </Nav.Link>
               </LinkContainer>
 
               <LinkContainer to="/quotes">
-                <Nav.Link>Quotes</Nav.Link>
+                <Nav.Link>
+                  <FormattedMessage id="navigation_3" />
+                </Nav.Link>
               </LinkContainer>
 
               <LinkContainer to="/contact">
-                <Nav.Link>Contact</Nav.Link>
+                <Nav.Link>
+                  <FormattedMessage id="navigation_4" />
+                </Nav.Link>
               </LinkContainer>
 
               <LinkContainer to="/about">
-                <Nav.Link>About</Nav.Link>
+                <Nav.Link>
+                  <FormattedMessage id="navigation_5" />
+                </Nav.Link>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>
+        <LanguageSelector onChangeHandler={props.onChangeHandler} />
       </Navbar>
     </>
   );

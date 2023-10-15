@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import PostList from "./PostList";
 import { Button, Col } from "react-bootstrap";
+import { FormattedMessage } from "react-intl";
 
 const baseURL = process.env.REACT_APP_BACKEND_URL + "posts/paginated";
 
@@ -33,7 +34,7 @@ export default function PostPaginated() {
       <Col md={{ span: 8, offset: 2 }} style={{ paddingTop: "10px" }}>
         <div className="d-grid gap-2">
           <Button variant="dark" size="lg" onClick={handleMoreQuotes}>
-            More Quotes
+            <FormattedMessage id="quotes_1" />
           </Button>
         </div>
       </Col>

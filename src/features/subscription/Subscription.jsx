@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import { regSw, subscribe } from "./helper";
+import { FormattedMessage } from "react-intl";
 
 function App() {
   async function registerAndSubscribe() {
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <Button variant="dark" onClick={registerAndSubscribe}>
-      subscribe
+      <FormattedMessage id="footer_1" />
     </Button>
   );
 }

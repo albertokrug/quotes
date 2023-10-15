@@ -1,0 +1,24 @@
+{
+  "home_1": "Read the latest quote.",
+  "about_1": "About me",
+  "about_2": "This is the first result of using the MERN - Stack.",
+  "about_3": "Products",
+  "about_4": "MongoDB",
+  "about_5": "TS.ED",
+  "about_6": "React",
+  "about_7": "NodeJs",
+
+  "contact_1": "Email address",
+  "contact_2": "Message",
+  "contact_3": "Send",
+
+  "quotes_1": "More quotes",
+
+  "footer_1": "Subscribe",
+
+  "navigation_1": "Alberts Daily Quote",
+  "navigation_2": "Home",
+  "navigation_3": "Quotes",
+  "navigation_4": "Contact",
+  "navigation_5": "About"
+}
