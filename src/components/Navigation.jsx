@@ -2,10 +2,9 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import Container from "react-bootstrap/Container";
-import LanguageSelector from "../features/language/LanguageSelector";
 import { FormattedMessage } from "react-intl";
 
-const Navigation = (props) => {
+const Navigation = () => {
   return (
     <>
       <Navbar
@@ -50,7 +49,6 @@ const Navigation = (props) => {
             </Nav>
           </Navbar.Collapse>
         </Container>
-        <LanguageSelector onChangeHandler={props.onChangeHandler} />
       </Navbar>
     </>
   );

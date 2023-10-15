@@ -22,7 +22,7 @@ function App() {
     <IntlProvider locale={locale} messages={messages}>
       <Container>
         <Row>
-          <Navigation onChangeHandler={handleLanguageChange} />
+          <Navigation />
         </Row>
       </Container>
       <Container style={{ padding: "100px 0 60px 0" }}>
@@ -37,7 +37,7 @@ function App() {
       </Container>
       <Container>
         <Row>
-          <Footer />
+          <Footer onChangeHandler={handleLanguageChange} />
         </Row>
       </Container>
     </IntlProvider>
