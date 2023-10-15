@@ -9,7 +9,7 @@ import Navigation from "./components/Navigation.jsx";
 import Footer from "./components/Footer.jsx";
 import { IntlProvider } from "react-intl";
 import { useState } from "react";
-import translations from "./translations/translations";
+import translations from "./features/language/translations/translations.js";
 function App() {
   const [locale, setLocale] = useState("de"); // state for current locale
 
