@@ -3,7 +3,7 @@ import React from "react";
 import PostList from "./PostList";
 import { Button, Col } from "react-bootstrap";
 
-const baseURL = process.env.BASE_URL + "/posts/paginated";
+const url = "rest/posts/paginated";
 
 export default function PostPaginated() {
   const [posts, setPosts] = React.useState([]);
@@ -12,7 +12,7 @@ export default function PostPaginated() {
   React.useEffect(() => {
     console.log({ limits: { skip, lim: 5 } });
     console.log(posts);
-    axios.post(baseURL, { limits: { skip, lim: 5 } }).then((response) => {
+    axios.post(url, { limits: { skip, lim: 5 } }).then((response) => {
       if (skip === 0) {
         setPosts((prevState) => [...response.data]);
       } else {

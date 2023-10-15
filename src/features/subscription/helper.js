@@ -33,10 +33,7 @@ async function subscribe(serviceWorkerReg) {
         process.env.APPLICATION_SERVER_KEY
       ),
     });
-    const res = await axios.post(
-      process.env.BASE_URL + "/subscribe",
-      subscription
-    );
+    const res = await axios.post("subscribe", subscription);
     return res;
   }
 }
