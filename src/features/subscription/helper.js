@@ -30,11 +30,11 @@ async function subscribe(serviceWorkerReg) {
     subscription = await serviceWorkerReg.pushManager.subscribe({
       userVisibleOnly: true,
       applicationServerKey: urlB64ToUint8Array(
-        "BNoygybxkBctVLSKdoBoz6jSQRhMarxaSW-s3vzGSKW69dI-4bYGwg7PQqRRmpDxFfmQDshmZtp0KJW0vsTdo4Q"
+        process.env.APPLICATION_SERVER_KEY
       ),
     });
     const res = await axios.post(
-      "https://quotes-api-pdk2.onrender.com/rest/subscribe",
+      process.env.BASE_URL + "subscribe",
       subscription
     );
     return res;
