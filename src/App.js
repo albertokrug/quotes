@@ -25,7 +25,7 @@ function App() {
           <Navigation onChangeHandler={handleLanguageChange} />
         </Row>
       </Container>
-      <Container style={{ padding: "60px 0 60px 0" }}>
+      <Container style={{ padding: "100px 0 60px 0" }}>
         <Row>
           <Routes>
             <Route path="/" element={<Home />} />

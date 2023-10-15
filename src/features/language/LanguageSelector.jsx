@@ -7,7 +7,7 @@ export default function LanguageSelector(props) {
   };
 
   return (
-    <Form inline>
+    <Form inline={"true"}>
       <Row>
         <Col xs="auto">
           <Form.Select onChange={handleLanguageSelect}>
