@@ -30,10 +30,13 @@ async function subscribe(serviceWorkerReg) {
     subscription = await serviceWorkerReg.pushManager.subscribe({
       userVisibleOnly: true,
       applicationServerKey: urlB64ToUint8Array(
-        process.env.APPLICATION_SERVER_KEY
+        process.env.REACT_APP_APPLICATION_SERVER_KEY
       ),
     });
-    const res = await axios.post("subscribe", subscription);
+    const res = await axios.post(
+      process.env.REACT_APP_BACKEND_URL + "subscribe",
+      subscription
+    );
     return res;
   }
 }

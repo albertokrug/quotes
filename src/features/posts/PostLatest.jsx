@@ -2,13 +2,13 @@ import axios from "axios";
 import React from "react";
 import Post from "./Post";
 
-const url = "/rest/posts/latest";
+const baseURL = process.env.REACT_APP_BACKEND_URL + "posts/latest";
 
 export default function PostLatest() {
   const [post, setPost] = React.useState(null);
 
   React.useEffect(() => {
-    axios.get(url).then((response) => {
+    axios.get(baseURL).then((response) => {
       setPost(response.data);
     });
   }, []);
