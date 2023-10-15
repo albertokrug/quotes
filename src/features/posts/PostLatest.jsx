@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import Post from "./Post";
 
-const baseURL = process.env.BASE_URL + "posts/latest";
+const baseURL = process.env.BASE_URL + "/posts/latest";
 
 export default function PostLatest() {
   const [post, setPost] = React.useState(null);

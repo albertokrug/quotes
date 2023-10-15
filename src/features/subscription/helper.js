@@ -34,7 +34,7 @@ async function subscribe(serviceWorkerReg) {
       ),
     });
     const res = await axios.post(
-      process.env.BASE_URL + "subscribe",
+      process.env.BASE_URL + "/subscribe",
       subscription
     );
     return res;

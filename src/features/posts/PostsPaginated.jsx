@@ -3,7 +3,7 @@ import React from "react";
 import PostList from "./PostList";
 import { Button, Col } from "react-bootstrap";
 
-const baseURL = process.env.BASE_URL + "posts/paginated";
+const baseURL = process.env.BASE_URL + "/posts/paginated";
 
 export default function PostPaginated() {
   const [posts, setPosts] = React.useState([]);
