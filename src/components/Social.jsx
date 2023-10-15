@@ -9,41 +9,43 @@ import {
   LinkedinIcon,
 } from "react-share";
 
+const myurl = "https://quotes-lj5u.onrender.com/quotes";
+
 const Social = () => {
   const stylePadding = { paddingRight: "2px" };
   return (
     <>
       <FacebookShareButton
         style={stylePadding}
-        url={"https://www.example.com"}
-        quote={"Dummy text!"}
-        hashtag="#muo"
+        url={myurl}
+        quote={"Read every day a new quote."}
+        hashtag="#albertsQuotes"
       >
         <FacebookIcon size={32} round />
       </FacebookShareButton>
 
       <TwitterShareButton
         style={stylePadding}
-        url={"https://www.example.com"}
-        quote={"Dummy text!"}
-        hashtag="#muo"
+        url={myurl}
+        quote={"Read every day a new quote."}
+        hashtag="#albertsQuotes"
       >
         <TwitterIcon size={32} round />
       </TwitterShareButton>
       <EmailShareButton
         style={stylePadding}
-        url="https://www.example.com"
-        subject="hello"
-        body="world!!!"
+        url={myurl}
+        subject="Alberts quotes"
+        body="Get everday a new quote"
       >
         <EmailIcon size={32} round />
       </EmailShareButton>
       <LinkedinShareButton
         style={stylePadding}
-        url="https://www.example.com"
-        title="Hello"
-        summary="world"
-        source="albert"
+        url={myurl}
+        title="Alberts quotes"
+        summary="Gives everyday a new quote"
+        source="Alberts quotes"
       >
         <LinkedinIcon size={32} round />
       </LinkedinShareButton>
