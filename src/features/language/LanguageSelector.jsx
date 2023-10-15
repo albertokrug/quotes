@@ -1,4 +1,4 @@
-import { Col, Form, Navbar, Row } from "react-bootstrap";
+import { Form, Navbar } from "react-bootstrap";
 
 export default function LanguageSelector(props) {
   const handleLanguageSelect = (e) => {
@@ -12,7 +12,6 @@ export default function LanguageSelector(props) {
         <Form.Select onChange={handleLanguageSelect}>
           <option value="en">English</option>
           <option value="de">Deutsch</option>
-          {/* Add more language options */}
         </Form.Select>
       </Navbar.Text>
     </>
