@@ -9,7 +9,7 @@ export default function Post(props) {
       <Card>
         <Card.Header>
           {props.post.title} -{" "}
-          {date.getFullYear() + "-" + date.getMonth() + "-" + date.getDay()}
+          {date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate()}
         </Card.Header>
         <Card.Body>
           <blockquote className="blockquote mb-0">
