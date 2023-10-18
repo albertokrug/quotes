@@ -6,13 +6,13 @@ import { Col, Row } from "react-bootstrap";
 const Footer = (props) => {
   return (
     <Row>
-      <Col md={{ span: 4 }}>
+      <Col xs={{ span: 4 }} md={{ span: 4 }}>
         <Social />
       </Col>
-      <Col md={{ span: 2 }}>
+      <Col xs={{ span: 4 }} md={{ span: 2 }}>
         <Subscription />
       </Col>
-      <Col md={{ span: 2 }}>
+      <Col xs={{ span: 4 }} md={{ span: 2 }}>
         <LanguageSelector onChangeHandler={props.onChangeHandler} />
       </Col>
     </Row>
