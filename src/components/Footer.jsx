@@ -1,27 +1,21 @@
-import { Col, Container, Navbar, Row } from "react-bootstrap";
 import Social from "./Social";
 import Subscription from "../features/subscription/Subscription";
 import LanguageSelector from "../features/language/LanguageSelector";
+import { Col, Row } from "react-bootstrap";
 
 const Footer = (props) => {
   return (
-    <Col>
-      <Navbar fixed="bottom" className="justify-content-between">
-        <Container>
-          <Row>
-            <Col xs="auto">
-              <Social />
-            </Col>
-            <Col xs="auto">
-              <Subscription />
-            </Col>
-            <Col xs="auto">
-              <LanguageSelector onChangeHandler={props.onChangeHandler} />
-            </Col>
-          </Row>
-        </Container>
-      </Navbar>
-    </Col>
+    <Row>
+      <Col md={{ span: 4 }}>
+        <Social />
+      </Col>
+      <Col md={{ span: 2 }}>
+        <Subscription />
+      </Col>
+      <Col md={{ span: 2 }}>
+        <LanguageSelector onChangeHandler={props.onChangeHandler} />
+      </Col>
+    </Row>
   );
 };
 

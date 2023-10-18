@@ -3,17 +3,12 @@ import { Navbar, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import Container from "react-bootstrap/Container";
 import { FormattedMessage } from "react-intl";
+import "../styles/navigation.css";
 
 const Navigation = () => {
   return (
     <>
-      <Navbar
-        fixed="top"
-        expand="lg"
-        data-bs-theme="dark"
-        bg="dark"
-        className="bg-body-tertiary"
-      >
+      <Navbar expand="lg" bg="nav-background">
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>

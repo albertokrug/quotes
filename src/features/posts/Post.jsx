@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 export default function Post(props) {
   const date = new Date(props.post.createdAt);
   return (
-    <Col style={{ paddingTop: "10px" }} md={{ span: 8, offset: 2 }}>
+    <Col style={{ marginTop: "10px" }} md={{ span: 8 }}>
       <Card>
         <Card.Header>
           {props.post.title} -{" "}

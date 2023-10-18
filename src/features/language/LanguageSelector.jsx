@@ -11,7 +11,9 @@ export default function LanguageSelector(props) {
       <Navbar.Text>
         <Form.Select onChange={handleLanguageSelect}>
           <option value="en">English</option>
-          <option value="de">Deutsch</option>
+          <option value="de" selected>
+            Deutsch
+          </option>
         </Form.Select>
       </Navbar.Text>
     </>

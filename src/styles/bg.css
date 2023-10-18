@@ -1,0 +1,8 @@
+.bg {
+  background-image: url("./background.png");
+  background-size: 42%, auto;
+  min-height: 95vh;
+  background-repeat: no-repeat;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 15px;
+}
