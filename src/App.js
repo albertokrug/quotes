@@ -10,6 +10,7 @@ import { IntlProvider } from "react-intl";
 import { useState } from "react";
 import translations from "./features/language/translations/translations.js";
 import "./styles/bg.css";
+import NotFound from "./components/NotFound.jsx";
 
 function App() {
   const [locale, setLocale] = useState("de"); // state for current locale
@@ -30,6 +31,7 @@ function App() {
               <Route path="/quotes" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Container>
         </div>
