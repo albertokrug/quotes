@@ -12,6 +12,10 @@
   position: relative;
 }
 
+.badge {
+  margin-right: 3px;
+}
+
 @media screen and (max-width: 768px) {
   .rainbow {
     max-height: 144px;
